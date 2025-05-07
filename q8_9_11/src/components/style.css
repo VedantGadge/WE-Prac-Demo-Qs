@@ -1,0 +1,9 @@
+.styled{
+    background-color: bisque;
+}
+
+/* accesses the h1 element inside the div element */
+.styled>h1{ 
+    font-style: italic;
+    word-spacing: 20px;
+}
