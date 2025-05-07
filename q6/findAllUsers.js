@@ -14,7 +14,7 @@ mongoose
     console.log("Error", err);
   });
 
-app.get("/", async (req, res) => {
+app.get("/allUsers", async (req, res) => {
   try {
     const users = await user.find({});
     res.send(`<h1>All users</h1><pre>${JSON.stringify(users, null, 2)}</pre>`); //JSON.stringify converts JS obj/arrays into string , null means no filter fn applied, 2 is no of spaced for indentation
